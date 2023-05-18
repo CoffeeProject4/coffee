@@ -10,6 +10,7 @@ class contactController extends Controller
     public function home(){
         return view('index');
     }
+    //test
 
     public function storeData(Request $request){
         $contact = new contact();
