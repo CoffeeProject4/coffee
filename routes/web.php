@@ -29,7 +29,8 @@ Route::get('/login', function () {
 
 Route::post('/login', 'App\Http\Controllers\AuthController@login')->name('login');
 
-Route::get('/logout', 'App\Http\Controllers\AuthController@logout')->name('logout');
+Route::get('/logout', 'App\Http\Controllers\AuthController@logout')->name('user.logout');
+
 
 Route::get('seatbook', 'App\Http\Controllers\CoffeeController@seatbook')->name('seatbook');
 Route::post('supply-data', 'App\Http\Controllers\CoffeeController@supplyData')->name('supply-data');
